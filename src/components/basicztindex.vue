@@ -55,7 +55,7 @@
 					<el-submenu index="5" style="background: #ececec;">
 						<template slot="title"><i class="fa fa-windows" style="color: #20A0FF; margin-right: 5px;"></i>系统管理</template>
 						<el-menu-item-group>
-							<el-menu-item index="5-1">基础信息设置</el-menu-item>
+							<el-menu-item index="basicjcxxindex">基础信息设置</el-menu-item>
 							<el-menu-item index="5-2">系统管理</el-menu-item>
 							<el-menu-item index="5-3">操作日志管理</el-menu-item>
 							<el-menu-item index="5-4">操作员管理</el-menu-item>
@@ -65,15 +65,15 @@
 					</el-submenu>
 				</el-menu>
 			</el-aside>
-			
+
 			<el-container>
 				<el-main>
 					<div style="height: 20px; width: 100%;">
 						<el-breadcrumb spearator-class="el-icon-arrow-right">
-							<el-breadcrumb-item :to="{ path: './' }">首页></el-breadcrumb-item>
+							<el-breadcrumb-item :to="{ path: './' }">首页>工资账套管理</el-breadcrumb-item>
 						</el-breadcrumb>
 					</div>
-					<!-- <display-info></display-info> -->
+					<basiczt-info></basiczt-info>
 				</el-main>
 			</el-container>
 		</el-container>
@@ -81,13 +81,13 @@
 </template>
 
 <script>
-	import DisplayInfo from './basic'
+	import BasicztInfo from './basiczt'
 	export default {
 		data() {
 			return {};
 		},
 		components: {
-			DisplayInfo: DisplayInfo
+			BasicztInfo: BasicztInfo
 		},
 		methods: {
 		  open() {

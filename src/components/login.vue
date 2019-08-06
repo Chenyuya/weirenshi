@@ -18,7 +18,7 @@
 			记住密码
 		</div>
 		<div class="but">
-			<button class="button" @click="btn">登录</button>
+			<button class="button" @click="btn"><router-link to="./" tag="a">登录</router-link></button>
 		</div>
 	</div>
 </template>
@@ -44,6 +44,10 @@
 </script>
 
 <style scoped>
+	a{
+		color: #fff;
+		text-decoration: none;
+	}
 	.login-box {
 		width: 350px;
 		margin: 9.3% auto 0;
